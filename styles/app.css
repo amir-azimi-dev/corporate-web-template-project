@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* reset styles */
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
