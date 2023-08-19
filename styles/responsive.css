@@ -1,0 +1,35 @@
+@media all and (min-width: 576px) {
+    
+}
+
+@media all and (min-width: 768px) {
+    .nav__wrapper {
+        margin: 0 auto;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .nav__wrapper {
+        margin: 0;
+    }
+
+    .nav__desktop-links {
+        display: flex;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    
+}
+
+@media all and (min-width: 1400px) {
+    
+}
