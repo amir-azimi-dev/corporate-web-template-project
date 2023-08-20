@@ -1,10 +1,17 @@
 :root {
+    /* colors */
     --primary-color: #E76F51;
-    --light-color: #d2d2d2;
     --white-color: #fff;
+    --light-color: #d2d2d2;
+    --milky-color: #FAF4F2;
     --dark-color: #3b3735;
     --gray-color: #8D8D8D;
     --white-color-glass: #ffffff28;
+
+    /* fonts */
+    --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+    --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+    --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -20,9 +27,10 @@ html {
 }
 
 body {
-    font-family: "Roboto";
+    font-family: var(--primary-font);
     font-size: 1.6rem;
     line-height: 1.6;
+    background-color: var(--milky-color);
 }
 
 /*--- start of reset styles ---*/
@@ -41,7 +49,7 @@ ul {
 /*--- start of components ---*/
 
 .btn {
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
     display: block;
     border-radius: 2rem;
     width: 18rem;
@@ -138,7 +146,7 @@ ul {
 
 .nav__desktop-link {
     color: var(--white-color);
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
     margin-left: 1.7rem;
 }
 
@@ -176,7 +184,7 @@ ul {
 }
 
 .hamburger-menu__title {
-    font-family: "Archivo Black";
+    font-family: var(--secondary-font);
     color: var(--white-color);
     border-bottom: 1px solid var(--white-color-glass);
     padding-bottom: 1rem;
@@ -321,7 +329,7 @@ ul {
 }
 
 .header-content__title {
-    font-family: "Archivo Black";
+    font-family: var(--secondary-font);
     font-size: 4.5rem;
     line-height: 1.3;
     max-width: 35.3rem;
@@ -337,8 +345,52 @@ ul {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
-
-
-/*================= header-content styles start =================*/
-
+/*================= header-content styles end =================*/
 /*===================== header styles end =======================*/
+
+/*===================== main styles start =======================*/
+
+.main {
+    margin-top: -17vh;
+}
+
+/*===================== services styles start =======================*/
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    width: 26rem;
+    height: 32rem;
+    padding: 6rem 2rem;
+    border-radius: 2rem;
+}
+
+.service__icon {
+
+}
+
+.service__title {
+    font-family: var(--secondary-font);
+    font-style: 1.8rem;
+    margin: 1rem 0 0.1rem;
+}
+
+.service__description {
+    max-width: 28rem;
+}
+
+/*===================== services styles end =======================*/
+
+/*===================== main styles end =======================*/
