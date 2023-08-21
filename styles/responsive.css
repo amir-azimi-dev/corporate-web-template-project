@@ -1,29 +1,41 @@
 @media all and (max-width: 340px) {
     .btn {
-        /*== header ==*/
         width: 15rem;
         height: 4rem;
         line-height: 4rem;
     }
 
-    .header-content__title {
-        font-size: 3rem;
+    body {
+        font-size: 1.3rem;
+    }
+
+    /*== destinations ==*/
+    .place__price {
+        padding: 1.2rem 2rem;
+    }
+
+    .place__title {
+        font-size: 1.5rem;
     }
 }
 
 @media all and (min-width: 576px) {
-    /*== header ==*/
+    /*== destinations ==*/
+    .place__img {
+        max-height: 25rem;
+    }
 }
 
 @media all and (min-width: 768px) {
+
     /*== header ==*/
     .nav__wrapper {
         margin: 0 auto;
     }
 
     .hamburger-menu {
-    visibility: hidden;
-    opacity: 0;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .nav__btn {
@@ -33,13 +45,20 @@
     .desktop-menu {
         display: flex;
     }
+
+    /*== destinations ==*/
+    .desktop-place {
+        display: block;
+    }
 }
 
 @media all and (min-width: 992px) {
+
     /*== header ==*/
     .header {
         height: 99vh;
     }
+
     .nav__wrapper {
         margin: 0;
     }
