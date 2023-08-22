@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <header class="header">
+
+    <header id="header" class="header">
         <div class="container">
             <!-- nav start -->
             <nav class="nav">
@@ -366,8 +367,9 @@
 
                             <input type="email" placeholder="Email Address" class="subscription__email-input">
                             <button type="submit" class="subscription__btn">
-                                <svg class="subscription__send-logo" id="Group_236" data-name="Group 236" xmlns="http://www.w3.org/2000/svg"
-                                    width="24.162" height="18.23" viewBox="0 0 24.162 18.23">
+                                <svg class="subscription__send-logo" id="Group_236" data-name="Group 236"
+                                    xmlns="http://www.w3.org/2000/svg" width="24.162" height="18.23"
+                                    viewBox="0 0 24.162 18.23">
                                     <path id="Path_909" data-name="Path 909"
                                         d="M9.778,15.82,6.954,17.7a.55.55,0,0,1-.816-.439V13.121l11.546-8.66L3.88,11.8.3,9.356A.748.748,0,0,1,.491,8.039L23.709-.37c.314-.126.565.251.377.565L13.606,17.514a.773.773,0,0,1-1.067.188Z"
                                         transform="translate(0.012 0.395)" fill="#fff" fill-rule="evenodd" />
@@ -385,7 +387,86 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">
+                        Hipcamp is everywhere you want to camp.
+                    </h3>
+                    <p class="footer__description">
+                        Discover unique experiences on ranches, nature preserves, farms, vineyards, and public
+                        campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry
+                        sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.
+                    </p>
+                </div>
+                <div class="footer__navigators-container">
+                    <div class="footer__navigator">
+                        <h3 class="footer__navigator-title">Get to Know Us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-link">About Us</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-link">Roles & Reservation Policies</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-link">Accessibility</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-link">Media Center</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="#" class="footer__list-link">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigator">
+                        <h3 class="footer__navigator-title">Plan with Us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Find Trip
+                                    Inspiration</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Build a Trip</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Buy a Pass</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Enter a Lottery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigator">
+                        <h3 class="footer__navigator-title">Let Us Help You</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Your Account</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Your Reservations</a>
+                            </li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Contact Us</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Help Center</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Submit Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer__app">
+                <h3 class="footer__title">Download Our App</h3>
+                <a href="#" class="footer__link">
+                    <img src="assets/images/app-store-apple.jpg" alt="app store link" class="footer__app-img">
+                </a>
+                <a href="#" class="footer__link">
+                    <img src="assets/images/google-play.jpg" alt="google play link" class="footer__app-img">
+                </a>
+            </div>
+            <p class="footer__copy-right">© 2020. All rights reserved.</p>
+
+            <a class="footer__scroll-link" href="#header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.68" height="22.175" viewBox="0 0 18.68 22.175">
+                    <path id="Path_958" data-name="Path 958"
+                        d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z"
+                        transform="translate(18.68) rotate(90)" fill="#e76f51" />
+                </svg>
+
+            </a>
+        </div>
+    </footer>
 
     <script src="./scripts/app.js"></script>
 </body>

@@ -23,6 +23,8 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     /* 62.5% = 10px */
+
+    scroll-behavior: smooth;
 }
 
 *,
@@ -182,6 +184,7 @@ ul {
     transition: all 0.1s ease-in-out;
     visibility: visible;
     opacity: 1;
+    z-index: 999;
 }
 
 .hamburger-menu--open {
@@ -261,7 +264,7 @@ ul {
 
 /*--- navigation btn styles (shows on max-width: 768px) ---*/
 .nav__btn {
-    background: var(--light-color);
+    background: var(--white-color);
     width: 5rem;
     height: 5rem;
     border-radius: 1.8rem;
@@ -621,3 +624,95 @@ ul {
 
 /*=================== subscription styles end =====================*/
 /*===================== main styles end =======================*/
+
+/*===================== footer styles start =======================*/
+.footer {
+    background-color: var(--secondary-color);
+    border-radius: 8rem 8rem 0 0;
+    padding-bottom: 3rem;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--dark-color);
+    flex-wrap: wrap;
+    padding-top: 10rem;
+}
+
+.footer__info {}
+
+.footer__title {
+    font-family: var(--secondary-font);
+    margin-bottom: 1rem;
+}
+
+.footer__description {}
+
+.footer__navigators-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.footer__navigator {
+    width: 15rem;
+}
+
+.footer__navigator-title {
+    font-family: var(--secondary-font);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+.footer__list {}
+
+.footer__list-item {
+    margin-bottom: 0.3rem;
+}
+
+.footer__list-link {
+    color: var(--dark-color);
+}
+
+.footer__list-link:hover {
+    font-weight: 600;
+}
+
+.footer__app {
+    margin: 3.7rem 0;
+}
+
+
+.footer__link {}
+
+.footer__app-img {
+    width: 11rem;
+    margin-right: 1rem;
+}
+
+.footer__copy-right {
+    text-align: center;
+    color: var(--gray-color);
+}
+
+.footer__scroll-link {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(+50%, -50%);
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+/*===================== footer styles end =======================*/
