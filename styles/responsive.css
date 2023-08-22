@@ -17,9 +17,33 @@
     .place__title {
         font-size: 1.5rem;
     }
+
+    /*== subscription ==*/
+    .subscription__email-box {
+        padding: 2rem;
+    }
+
+    .subscription__email-icon {
+        left: 1.5rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    .subscription__email-input {
+        border-radius: 2rem;
+        padding: 0 5.4rem 0 4.5rem;
+    }
+
+    .subscription__btn {
+        right: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
 }
 
 @media all and (min-width: 576px) {
+
     /*== destinations ==*/
     .place__img {
         max-height: 25rem;
@@ -73,6 +97,24 @@
 
     .header-content__description {
         max-width: 50rem;
+    }
+
+    /*== subscription ==*/
+    .subscription {
+        flex-direction: row;
+        padding: 1rem 5rem;
+    }
+
+    .subscription__content {
+        text-align: left;
+    }
+
+    .subscription__title {
+        margin: 2rem 0 0;
+    }
+
+    .subscription__banner {
+        max-width: 40%;
     }
 }
 
