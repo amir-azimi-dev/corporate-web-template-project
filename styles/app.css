@@ -7,6 +7,7 @@
     --milky-color: #FAF4F2;
     --dark-color: #3b3735;
     --gray-color: #8D8D8D;
+    --primary-color-glass: #e76f514d;
     --gray-color-glass: #8c8c8c1a;
     --white-color-glass: #ffffff28;
 
@@ -16,7 +17,7 @@
     --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 
     /* shadows */
-    --shadow: 0.2rem 0.3rem 0.3rem var(--gray-color-glass);
+    --shadow: 0.3rem 0.3rem 1rem 0.1rem var(--primary-color-glass);
 }
 
 html {
@@ -38,6 +39,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     background-color: var(--milky-color);
+    overflow-x: hidden;
 }
 
 /*--- start of reset styles ---*/
@@ -72,7 +74,7 @@ ul {
 
 /*===================== header styles start =======================*/
 .header {
-    background: linear-gradient(#3b373580, #3b373580), url("../assets/images/header-bg.jpg") center center/cover;
+    background: linear-gradient(#3b373580, #3b373580), url("../assets/images/header-bg-min.jpg") center center/cover;
     min-height: 90vh;
     border-radius: 0 0 8rem 8rem;
 }
@@ -272,7 +274,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer
+    cursor: pointer;
+    box-shadow: var(--shadow);
 }
 
 .nav__btn-line {
@@ -380,7 +383,6 @@ ul {
     flex-grow: 1;
     color: var(--dark-color);
     background-color: var(--white-color);
-    box-shadow: var(--shadow);
     width: 26rem;
     height: 32rem;
     padding: 6rem 3rem;
@@ -406,6 +408,30 @@ ul {
 .destinations {
     margin-top: 10rem;
     text-align: center;
+    position: relative;
+}
+
+.destinations::before,
+.destinations::after {
+    content: "";
+    position: absolute;
+    width: 71vw;
+    height: 72vw;
+    z-index: -1;
+}
+
+.destinations::before {
+    top: 0;
+    right: 0;
+    transform: translate(45%, -20%);
+    background: url(../assets/svgs/Shape1.svg) no-repeat center center/cover;
+}
+
+.destinations::after {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, -30%);
+    background: url(../assets/svgs/Shape2.svg) no-repeat center center/cover;
 }
 
 .destinations__logo {
@@ -438,7 +464,6 @@ ul {
     width: 26rem;
     overflow: hidden;
     flex-grow: 1;
-    box-shadow: var(--shadow);
 }
 
 .desktop-place {
@@ -482,7 +507,9 @@ ul {
     background: var(--white-color);
     width: 4rem;
     height: 4rem;
-    line-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -534,6 +561,19 @@ ul {
     border-radius: 2rem;
     margin: 8rem auto;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.subscription::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 95%;
+    background: url(../assets/svgs/shape4.svg) no-repeat center/cover;
+    z-index: -1;
 }
 
 .subscription__content {
@@ -712,7 +752,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer
+    cursor: pointer;
+    box-shadow: var(--shadow);
 }
 
 /*===================== footer styles end =======================*/
