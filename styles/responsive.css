@@ -6,8 +6,13 @@
     }
 
     .footer__navigators-container {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
@@ -71,6 +76,9 @@
 }
 
 @media all and (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
 
     /*== destinations ==*/
     .place__img {
@@ -79,6 +87,9 @@
 }
 
 @media all and (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
 
     /*== header ==*/
     .nav__wrapper {
@@ -95,6 +106,8 @@
     }
 
     .desktop-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -113,6 +126,9 @@
 }
 
 @media all and (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
 
     /*== header ==*/
     .header {
@@ -124,6 +140,8 @@
     }
 
     .nav__desktop-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -143,7 +161,10 @@
 
     /*== subscription ==*/
     .subscription {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         padding: 1rem 5rem;
     }
 
@@ -169,8 +190,11 @@
 
     /*== footer ==*/
     .footer__content {
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     }
 
     .footer__info {
@@ -178,8 +202,11 @@
     }
 
     .footer__navigators-container {
-        flex-wrap: nowrap;
-        flex-grow: 0;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
     }
 
     .footer__app {
@@ -188,11 +215,16 @@
 
     .footer__scroll-link {
         right: 1.5rem;
-        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
     }
 }
 
 @media all and (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
 
     /*== footer ==*/
     .footer__info {
@@ -201,5 +233,7 @@
 }
 
 @media all and (min-width: 1400px) {
-    /*== footer ==*/
+    .container {
+        width: 137rem;
+    }
 }
